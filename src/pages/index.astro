@@ -1,11 +1,28 @@
 ---
-import Welcome from '../components/Welcome.astro';
+import { Image } from "astro:assets";
+import skiBanner from "../assets/adaptive-skiers.webp";
+import Nav from '../components/Nav.astro';
 import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
 ---
 
-<Layout>
-	<Welcome />
+<Layout title="Home - Red de Inclusión Deportiva (RID)" description="At RID, as a sports non profit organisation, we believe that sports have the power to break social and mental barriers.">
+	<Nav />
+	<Image src={skiBanner} alt="Banner" id="banner" />
+	<h1>Red de Inclusión Deportiva</h1>
 </Layout>
+
+<style>
+	#banner {
+		max-width: 1200px;
+		height: auto;
+	}
+	h1 {
+		position: absolute;
+		top: 2rem;
+	}
+	@media (min-width: 1200px) {
+		#banner {
+			max-width: 100%;
+		}
+	}
+</style>
