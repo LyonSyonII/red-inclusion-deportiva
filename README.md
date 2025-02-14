@@ -11,17 +11,17 @@ By highlighting the achievements of athletes with disabilities, we aim to inspir
 
 ## Who
 
-![Arnau](./src/assets/arnau.webp | width=400)   
+<img src="./src/assets/arnau.webp" width="400" />
 Arnau is a highly skilled ski expert with a rich background in alpine and adaptive skiing, spanning nearly a decade of professional experience in renowned ski destinations across Europe and South America.  
 
 Alongside his professional achievements, he has contributed as an educational support specialist for students with disabilities.          
 
-![Francisca](./src/assets/francisca.webp | width=400)   
+<img src="./src/assets/francisca.webp" width="400" />
 Francisca Núñez Ayllach is an alpine ski instructor and an experienced project manager, with diverse professional background in sports, ecotourism and international collaboration.
 
 Due to that she has demonstrated exceptional skill in managing projects, particularly in the field of adaptive skiing and outdoor education. 
 
-![Andrea](./src/assets/andrea.webp | width=400)
+<img src="./src/assets/andrea.webp" width="400" />
 Andrea Menescardi, is an internationally recognized trainer in adapted sports, with a specialization in adaptive skiing.
 
 With extensive experience, he has dedicated his career to inclusivity and excellence in sports, combining technical expertise with a passion for empowering individuals of all abilities.
