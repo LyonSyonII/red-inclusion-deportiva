@@ -1,48 +1,36 @@
-# Astro Starter Kit: Basics
+# Red de Inclusión Deportiva (RID)
 
-```sh
-npm create astro@latest -- --template basics
-```
+## What
+At RID, as a sports non profit organisation, we believe that sports have the power to break social and mental barriers, build confidence, and foster inclusion.
+Our mission is to empower individuals with physical and intellectual disabilities by providing opportunities to engage in sports, showcasing their strength, resilience, and potential.
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/basics)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/basics)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/basics/devcontainer.json)
+We are dedicated to promoting self-improvement and personal growth through inclusive sporting activities, where everyone, regardless of ability, can thrive and challenge their limits. Our programs aim to not only enhance physical abilities but also support mental well-being, encourage social interaction, and foster a sense of community.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+By highlighting the achievements of athletes with disabilities, we aim to inspire others, raise awareness, and create a world where everyone has the opportunity to reach their fullest potential, both on and off the field. Join us in our commitment to inclusivity and empowerment through sport! 
 
-![just-the-basics](https://github.com/withastro/astro/assets/2244813/a0a5533c-a856-4198-8470-2d67b1d7c554)
 
-## 🚀 Project Structure
+## Who
 
-Inside of your Astro project, you'll see the following folders and files:
+![Arnau](./src/assets/arnau.webp)   
+Arnau is a highly skilled ski expert with a rich background in alpine and adaptive skiing, spanning nearly a decade of professional experience in renowned ski destinations across Europe and South America.  
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src/
-│   ├── layouts/
-│   │   └── Layout.astro
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+Alongside his professional achievements, he has contributed as an educational support specialist for students with disabilities.          
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+![Francisca](./src/assets/francisca.webp)   
+Francisca Núñez Ayllach is an alpine ski instructor and an experienced project manager, with diverse professional background in sports, ecotourism and international collaboration.
 
-## 🧞 Commands
+Due to that she has demonstrated exceptional skill in managing projects, particularly in the field of adaptive skiing and outdoor education. 
 
-All commands are run from the root of the project, from a terminal:
+![Andrea](./src/assets/andrea.webp)
+Andrea Menescardi, is an internationally recognized trainer in adapted sports, with a specialization in adaptive skiing.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+With extensive experience, he has dedicated his career to inclusivity and excellence in sports, combining technical expertise with a passion for empowering individuals of all abilities.
 
-## 👀 Want to learn more?
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## Where
+
+hi@championsfactory.bg
+
+Manastirski Livadi, ul. Mur 27, 1680 Sofia, Bulgaria
+
+...Mes dades?
