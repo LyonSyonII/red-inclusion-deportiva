@@ -2,6 +2,13 @@
 import Nav from '../components/Nav.astro';
 import Profiles from '../components/Profiles.astro';
 import Layout from '../layouts/Layout.astro';
+import { getImage } from "astro:assets";
+import Skiers from "../assets/adaptive-skiers.webp";
+
+const banner = await (async () => {
+	const img = await getImage({src: Skiers});
+	return `url('${img.src}')`;
+})();
 ---
 
 <Layout title="RID - Red de Inclusión Deportiva" description="At RID, as a sports non profit organisation, we believe that sports have the power to break social and mental barriers.">
@@ -37,9 +44,9 @@ import Layout from '../layouts/Layout.astro';
 
 </Layout>
 
-<style>
+<style define:vars={{ banner }}>
 	#banner {
-		background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url('/red-inclusion-deportiva/adaptive-skiers.webp');
+		background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), var(--banner);
 		background-size: cover;
 		background-position: center center;
 		width: 100%;
