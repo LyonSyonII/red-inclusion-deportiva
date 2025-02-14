@@ -1,5 +1,6 @@
 ---
-import "@fontsource/fira-sans";
+import firaSans700 from "@fontsource/fira-sans/files/fira-sans-latin-700-normal.woff";
+// import firaSans500 from "@fontsource/fira-sans/files/fira-sans-latin-500-normal.woff";
 
 interface Props {
 	title: string;
@@ -8,12 +9,24 @@ interface Props {
 
 const { title, description } = Astro.props;
 ---
+
 <!doctype html>
 <html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href={`${import.meta.env.BASE_URL}/favicon.svg`} />
+		<link
+			rel="preload"
+			href={firaSans700}
+			as="font"
+			type="font/woff2"
+			crossorigin
+		/>
+		<link
+			rel="icon"
+			type="image/svg+xml"
+			href={`${import.meta.env.BASE_URL}/favicon.svg`}
+		/>
 		<meta name="generator" content={Astro.generator} />
 		<meta name="description" content={description} />
 		<title>{title}</title>
@@ -24,6 +37,29 @@ const { title, description } = Astro.props;
 </html>
 
 <style>
+	@font-face {
+		font-family: "Fira Sans";
+		font-style: normal;
+		font-display: block;
+		font-weight: 500;
+		src: url(@fontsource/fira-sans/files/fira-sans-latin-500-normal.woff)
+			format("woff2");
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+			U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+			U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+	@font-face {
+		font-family: "Fira Sans";
+		font-style: normal;
+		font-display: block;
+		font-weight: 700;
+		src: url(@fontsource/fira-sans/files/fira-sans-latin-700-normal.woff)
+			format("woff2");
+		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+			U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122,
+			U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+	}
+	
 	html,
 	body {
 		margin: 0;

@@ -1,31 +1,44 @@
 ---
-import Nav from '../components/Nav.astro';
-import Profiles from '../components/Profiles.astro';
-import Layout from '../layouts/Layout.astro';
+import Layout from "../layouts/Layout.astro";
+import Profiles from "../components/Profiles.astro";
 import { getImage } from "astro:assets";
 import Skiers from "../assets/adaptive-skiers.webp";
 
-const banner = await (async () => {
-	const img = await getImage({src: Skiers});
-	return `url('${img.src}')`;
-})();
+const banner = await getImage({src: Skiers});
 ---
 
-<Layout title="RID - Red de Inclusión Deportiva" description="At RID, as a sports non profit organisation, we believe that sports have the power to break social and mental barriers.">
-	<!-- 	<Nav /> -->
-	<!-- <Image src={skiBanner} alt="Banner" id="banner" /> -->
-	<div id="banner">
-		<!-- <h1>RED DE INCLUSIÓN DEPORTIVA</h1> -->
+<Layout
+	title="RID - Red de Inclusión Deportiva"
+	description="At RID, as a sports non profit organisation, we believe that sports have the power to break social and mental barriers."
+>
+	<div id="banner" style={{
+		background: `linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(${banner.src})`,
+		backgroundSize: "cover",
+		backgroundPosition: "center center",
+	}}>
 		<h1>Red de Inclusión Deportiva</h1>
 	</div>
+
 	<h2>What</h2>
 	<p id="what">
-	At RID, as a sports non profit organisation, we believe that sports have the power to break social and mental barriers, build confidence, and foster inclusion. <br>
-	Our mission is to empower individuals with physical and intellectual disabilities by providing opportunities to engage in sports, showcasing their strength, resilience, and potential.<br><br>
+		At RID, as a sports non profit organisation, we believe that sports have the
+		power to break social and mental barriers, build confidence, and foster
+		inclusion. <br />
+		Our mission is to empower individuals with physical and intellectual disabilities
+		by providing opportunities to engage in sports, showcasing their strength, resilience,
+		and potential.<br /><br />
 
-	We are dedicated to promoting self-improvement and personal growth through inclusive sporting activities, where everyone, regardless of ability, can thrive and challenge their limits. Our programs aim to not only enhance physical abilities but also support mental well-being, encourage social interaction, and foster a sense of community.<br><br>
+		We are dedicated to promoting self-improvement and personal growth through
+		inclusive sporting activities, where everyone, regardless of ability, can
+		thrive and challenge their limits.<br />
+		Our programs aim to not only enhance physical abilities but also support mental
+		well-being, encourage social interaction, and foster a sense of community.<br
+		/><br />
 
-	By highlighting the achievements of athletes with disabilities, we aim to inspire others, raise awareness, and create a world where everyone has the opportunity to reach their fullest potential, both on and off the field. Join us in our commitment to inclusivity and empowerment through sport!
+		By highlighting the achievements of athletes with disabilities, we aim to
+		inspire others, raise awareness, and create a world where everyone has the
+		opportunity to reach their fullest potential, both on and off the field.
+		Join us in our commitment to inclusivity and empowerment through sport!
 	</p>
 
 	<h2>Who</h2>
@@ -39,16 +52,15 @@ const banner = await (async () => {
 	</div>
 
 	<div id="copyright">
-		<p>© 2025 Red de Inclusión Deportiva. All Rights Reserved. <a href="https://garriga.dev">By Liam Garriga</a></p>
+		<p>
+			© 2025 Red de Inclusión Deportiva. All Rights Reserved. <a
+				href="https://garriga.dev">By Liam Garriga</a>
+		</p>
 	</div>
-
 </Layout>
 
-<style define:vars={{ banner }}>
+<style>
 	#banner {
-		background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), var(--banner);
-		background-size: cover;
-		background-position: center center;
 		width: 100%;
 		height: 850px;
 		display: flex;
@@ -109,7 +121,7 @@ const banner = await (async () => {
 	#copyright a {
 		color: white;
 	}
-/* 	@media (min-width: 1200px) {
+	/* 	@media (min-width: 1200px) {
 		#banner {
 		
 		}
